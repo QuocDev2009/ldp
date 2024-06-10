@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="Nguyễn Quang Vũ"/>
+    <meta name="keywords" content="W3 band homework"/>
+    <meta name="description" content="Basic homework w3 band website"/>
+    <meta property="og:author" content="Nguyễn Quang Vũ">
+    <meta property="og:title" content="Bài tập cơ bản">
+    <meta property="og:url" content="https://quocdev2009.github.io/w3_band">
+    <meta property="og:image" content="./assets/images/troll_face.png">
+    <title>W3.Css Template</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/responsive.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <link rel="icon" href="https://cdn-1.webcatalog.io/catalog/w3schools/w3schools-icon-filled-256.png?v=1675611833243">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <ul id="navigation">
+                <li onclick="load('#')"><a>Trang chủ</a></li>
+                <li onclick="load('#about')"><a>Thông Tin</a></li>
+                <li onclick="load('#tour')"><a>Đặt vé</a></li>
+                <li onclick="load('#contact')"><a>Liên hệ</a></li>
+            </ul>
+            <i class="ti-search search"></i>
+            <i id="menu-button" class="ti-menu menu-button"></i>
+        </div>
+        <div id="slider">
+            <div id="text-content">
+                <h2 id="text-heading">
+                    Phố cỗ Hội An
+                </h2>
+                <div id="text-description">
+                        Quảng Nam
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <div id="about">
+                <div class="about-heading">
+                    Du lịch
+                </div>
+                <div class="slogans">
+                    <i>thư giản và nghỉ ngơi</i>
+                </div>
+                <p id="about-content">
+                    Du lịch là một hoạt động thú vị và bổ ích mà không chỉ giúp chúng ta khám phá những địa điểm mới mà còn giúp ta nâng cao kiến thức và trải nghiệm văn hóa đồng bằng. Việc đi du lịch cũng giúp ta thư giãn, thả hồn vào thiên nhiên và tìm hiểu về các bề dày lịch sử.
+                    <br>
+                    Mỗi chuyến du lịch là một cơ hội để ta kết nối với bạn bè, gia đình và tạo ra những kỷ niệm đáng nhớ. Không chỉ thế, việc khám phá những danh lam thắng cảnh, di tích lịch sử cũng giúp mở rộng tầm mắt và khám phá những giá trị văn hóa của mỗi vùng miền.
+                    <br>
+                    Du lịch không chỉ là sự hưởng thụ cá nhân mà còn là cách để ta tìm hiểu và tôn trọng văn hóa, truyền thống của mỗi dân tộc và nền văn minh. Việc hiểu biết về đất nước, con người và địa lý cũng giúp ta có cái nhìn toàn diện hơn về thế giới xung quanh.
+                    <br>
+                    Vì vậy, hãy dành thời gian và cơ hội để khám phá và trải nghiệm du lịch, để có những kỷ niệm đáng nhớ và những bài học quý giá trong cuộc sống. Du lịch không chỉ là cách để ta thư giãn mà còn là cơ hội để ta phát triển bản thân và khám phá cuộc sống đầy màu sắc và ý nghĩa.
+                    <br>
+                    (văn mẫu - trích từ chat-gpt)
+                </p>
+                <div id="about-images" class="pt-16">
+                    <div class="text-image-heading">
+                        <div class="text-about pt-16">
+                            Phố cỗ hội an 
+                        </div>
+                        <img src="./assets/images/hoian2.jpg">
+                    </div>
+                    <div class="text-image-heading">
+                        <div class="text-about pt-16">
+                            Phố cỗ Đồng Văn 
+                        </div>
+                        <img src="./assets/images/dongvan2.jpg">
+                    </div>
+                    <div class="text-image-heading">
+                        <div class="text-about pt-16">
+                            Phố cỗ Hà Nội
+                        </div>
+                        <img src="./assets/images/hanoi2.jpg">
+                    </div>
+                </div>
+            </div>
+            <div id="tour">
+                <div class="about-heading">
+                    Giá vé
+                </div>
+                <div class="slogans">
+                    <i>Mua đê</i>
+                </div>
+                <ul class="ticket-list">
+                    <li class="type">
+                        đảo
+                        <span class="sold-out">Hết vé rồi...</span>
+                    </li>
+                    <li class="type">
+                        biển 
+                        <span class="ticket-quantity">2</span>
+                    </li>
+                    <li class="type">
+                        phố cổ
+                        <span class="ticket-quantity">3</span>
+                    </li>
+                </ul>
+                <ul class="ticket">
+                    <li class="ticket-element">
+                        <div class="background-images">
+                            <img src=".\assets\images\hanoi3.jpg" alt="" class="ticket-image">
+                        </div>
+                        <div class="ticket-content">
+                            <p class="address">phố cỗ Hà Nội</p>
+                            <p class="shelf-life">ngày 7 tháng 7 năm 2024</p>
+                            <p class="ticket-description">
+                                Phố cổ Hà Nội xưa nay vẫn đẹp, cổ kính, nhộn nhịp, phấn khích, hấp dẫn, tưng bừng, ngập tràn, độc đáo, đặc sắc.
+                            </p>
+                            <div class="ticket-bottom">
+                                <span class="buy-ticket">
+                                    mua!
+                                </span>
+                                <span class="info-ticket" onclick="turnOn('HANOI')">
+                                    Chi tiết!
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="ticket-element">
+                        <div class="background-images">
+                            <img src=".\assets\images\hoian3.jpg" alt="" class="ticket-image">
+                        </div>
+                        
+                        <div class="ticket-content">
+                            <p class="address">Phố cỗ Hội An</p>
+                            <p class="shelf-life">ngày 7 tháng 7 năm 2024</p>
+                            <p class="ticket-description">
+                                Phố cổ Hội An là điểm du lịch lịch sử nổi tiếng, kết hợp nét đẹp truyền thống và văn hoá đa dạng.
+                            </p>
+                            <div class="ticket-bottom">
+                                <span class="buy-ticket">
+                                    mua!
+                                </span>
+                                <span class="info-ticket" onclick="turnOn('HOIAN')">
+                                    Chi tiết!
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="ticket-element">
+                        <div class="background-images">
+                            <img src=".\assets\images\dongvan3.jpg" alt="" class="ticket-image">
+                        </div>
+                        <div class="ticket-content">
+                            <p class="address">phố cỗ đồng văn</p>
+                            <p class="shelf-life">ngày 7 tháng 7 năm 2024</p>
+                            <p class="ticket-description">
+                                Phố cổ Đồng Văn ở Hà Giang là nơi thơ mộng, bảo tồn nền văn hóa độc đáo và cảnh đẹp hùng vĩ của vùng cao nguyên đá.
+                            </p>
+                            <div class="ticket-bottom">
+                                <span class="buy-ticket">
+                                    mua!
+                                </span>
+                                <span class="info-ticket" onclick="turnOn('DONGVAN')">
+                                    Chi tiết!
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="ticket">
+                    <li class="ticket-element">
+                        <div class="background-images">
+                            <img src="./assets/images/da-nang-beach-thumb_1651076727.jpg" alt="" class="ticket-image">
+                        </div>
+                        
+                        <div class="ticket-content">
+                            <p class="address">Bãi biển Đà Nẵng</p>
+                            <p class="shelf-life">ngày 7 tháng 7 năm 2024</p>
+                            <p class="ticket-description">
+                                Bãi biển Đà Nẵng: Cát trắng, nước trong xanh, và không gian tuyệt vời để thư giãn và tận hưởng kỳ nghỉ.
+                            </p>
+                            <div class="ticket-bottom">
+                                <span class="buy-ticket">
+                                    mua!
+                                </span>
+                                <span class="info-ticket" onclick="turnOn('DANANG')">
+                                    Chi tiết!
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="ticket-element">
+                        <div class="background-images">
+                            <img src=".\assets\images\bai-bien-nha-trang-220221226141951.jpg" alt="" class="ticket-image">
+                        </div>
+                        <div class="ticket-content">
+                            <p class="address">Bãi điển Nha Trang</p>
+                            <p class="shelf-life">ngày 7 tháng 7 năm 2024</p>
+                            <p class="ticket-description">
+                                Nha Trang: Bãi biển đẹp, nước biển trong xanh, là điểm đến lý tưởng cho kỳ nghỉ và thư giãn.
+                            </p>
+                            <div class="ticket-bottom">
+                                <span class="buy-ticket">
+                                    mua!
+                                </span>
+                                <span class="info-ticket" onclick="turnOn('NHATRANG')">
+                                    Chi tiết!
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="contact">
+                <div class="center">
+                    <div class="about-heading">
+                        LIÊN HỆ
+                    </div>
+                    <div class="contact-content">
+                        <div class="contact-info">
+                            <p><i class="ti-location-pin"></i>Quảng Nam, VN</p>
+                            <p><i class="ti-mobile"></i>Phone: 0123456789</p>
+                            <p><i class="ti-email"></i>Email: mail@gmail.com</p>
+                        </div>
+                        <form action="" class="contact-input">
+                            <div class="top-input s-mt-16">
+                                <input required style="margin-right: 10px;" type="text" class="top" id="" placeholder="Name">
+                                <input required type="email" class="top" id="" placeholder="Email">
+                            </div>
+                            <div class="bottom-input s-mt-16"><input required type="text" placeholder="Message" id=""></div>
+                            <div class="submit-input">
+                                <input type="submit" value="SEND">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="map">
+                <img width="100%" src="https://www.w3schools.com/w3images/map.jpg" alt="" srcset="">
+            </div>
+        </div>
+        <div id="footer">
+            <div class="social-list">
+                <a href="https://www.facebook.com/profile.php?id=61560934943492">
+                    <i class="ti-facebook"></i>
+                </a>
+                <a href="#">
+                    <i class="ti-instagram"></i>
+                </a>
+                <a href="https://github.com/Vupasjs">
+                    <i class="ti-github"></i>
+                </a>
+                <a href="#">
+                    <i class="ti-pinterest"></i>
+                </a>
+                <a href="#">
+                    <i class="ti-twitter-alt"></i>
+                </a>
+                <a href="#">
+                    <i class="ti-linkedin"></i>
+                </a>
+            </div>
+            <div id="author">
+                Powered by <a href="">Nguyễn Quang Vũ</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal-container modal-buy" style="max-width: calc(100% - 40px);">
+            <div class="modal-close close-board">
+                <i class="ti-close"></i>
+            </div>
+            <div class="modal-header">
+                <i style="margin-right: 16px;" class="ti-bag"></i>
+                mua vé
+            </div>
+            <div class="modal-body">
+                <label for="quantity" class="modal-label">
+                    <i class="ti-shopping-cart"></i>
+                    mỗi vé 1 người, giá: 444k vnđ
+                </label><br>
+                <input type="text" id="quantity" class="modal-input" placeholder="Bao nhiêu vé?">
+                <br>
+                <label for="email" class="modal-label">
+                    <i class="ti-user"></i>
+                    Send To
+                </label><br>
+                <input type="email" id="email" class="modal-input" placeholder="mail của bạn?">
+                <div class="modal-pay">
+                    đặt
+                    <i class="ti-check"></i>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="footer-close close-board">
+                    đóng
+                    <i class="ti-close"></i>
+                </div>
+                <p class="help">
+                    cần <a href="#">hỗ trợ?</a>
+                </p>
+            </div>
+        </div>
+        <div class="modal-container modal-info" style="max-width: calc(100% - 40px);">
+            <div class="modal-close close-board">
+                <i class="ti-close"></i>
+            </div>
+            <div class="modal-header">
+                <i style="margin-right: 16px;" class="ti-info-alt"></i>
+                Thông Tin
+            </div>
+            <div class="modal-body">
+               <ul class="info-list">
+               </ul>
+            </div>
+            <div class="modal-footer">
+                <div class="footer-close close-board">
+                    đóng
+                    <i class="ti-close"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/script/change_background/main.js"></script>
+    <script src="./assets/script/buy_tickets/buy.js"></script>
+    <script src="./assets/script/open/open_menu.js"></script>
+    <script src="./assets/script/buy_tickets/info.js"></script>
+    <script>
+        function load(url){
+            window.location.assign(url)
+        }
+    </script>
+</body> 
+</html>
